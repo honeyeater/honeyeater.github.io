@@ -1,6 +1,6 @@
 
  <!DOCTYPE HTML>
-<html >
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   
@@ -11,6 +11,8 @@
     
     
     
+    
+    <link rel="alternate" href="/atom.xml" title="一步" type="application/atom+xml">
     
     
     <link rel="icon" href="/img/favicon.ico">
@@ -34,20 +36,22 @@
 				<h1 class="site-name"><a href="/" title="一步">一步</a></h1>
 				<h2 class="blog-motto">业精于勤荒于嬉</h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
 			<nav class="animated">
 				<ul>
 					
-						<li><a href="/">Home</a></li>
+						<li><a href="/">首页</a></li>
 					
-						<li><a href="/archives">Archives</a></li>
+						<li><a href="/categories">分类</a></li>
+					
+						<li><a href="/archives">归档</a></li>
 					
 					<li>
 					
-					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+					<form class="search" action="//www.baidu.com" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" style="display:none;"/>
 						<input type="hidden" name="q" value="site:honeyeater.github.io">
 					</form>
 					
@@ -71,7 +75,7 @@
     </p>
   <p class="article-time">
     <time datetime="2016-03-02T06:14:03.000Z" itemprop="datePublished">2016-03-02</time>
-    Updated:<time datetime="2016-03-02T06:14:03.066Z" itemprop="dateModified">2016-03-02</time>
+    更新日期:<time datetime="2016-03-02T09:06:23.750Z" itemprop="dateModified">2016-03-02</time>
     
   </p>
 </header>
@@ -79,7 +83,7 @@
 		
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
+			<strong class="toc-title">文章目录</strong>
 		
 		</div>
 		
@@ -87,6 +91,11 @@
 	</div>
 		<footer class="article-footer clearfix">
 
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Java/">Java</a>
+</div>
 
 
 
@@ -104,7 +113,7 @@
 
 <div class="next">
 <a href="/2016/03/02/hello-world/"  title="Hello World">
- <strong>NEXT:</strong><br/> 
+ <strong>下一篇:</strong><br/> 
  <span>Hello World
 </span>
 </a>
@@ -113,24 +122,37 @@
 </nav>
 
 	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
+  <strong class="toc-title">文章目录</strong>
   
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
 
   
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/Java/" title="Java">Java<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
 
   
 
   <div class="rsspart">
-	<a href="null" target="_blank" title="rss">RSS</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
 </div>
 
 </aside>
@@ -146,12 +168,14 @@
 	
 	<div class="social-font clearfix">
 		
+		<a href="http://weibo.com/http://weibo.com/honeylocust" target="_blank" title="weibo"></a>
+		
 		
 		
 		
 		
 	</div>
-		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2016 
+		<p class="copyright">Powered by Hexo ©  
 		
 		<a href="http://honeyeater.github.io" target="_blank" title="honeyeater">honeyeater</a>
 		
@@ -267,6 +291,18 @@ $(document).ready(function(){
 });     
 </script>
 
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"null"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
 
 
 
