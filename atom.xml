@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://honeyeater.github.io/"/>
-  <updated>2016-03-03T14:40:27.724Z</updated>
+  <updated>2016-03-03T15:13:14.950Z</updated>
   <id>http://honeyeater.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://honeyeater.github.io/2016/03/03/%E5%9F%BA%E4%BA%8EHexo%E6%90%AD%E5%BB%BAGithub%E5%8D%9A%E5%AE%A2/"/>
     <id>http://honeyeater.github.io/2016/03/03/基于Hexo搭建Github博客/</id>
     <published>2016-03-03T13:09:14.000Z</published>
-    <updated>2016-03-03T14:40:27.724Z</updated>
+    <updated>2016-03-03T15:13:14.950Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文基于Window7环境搭建Github博客&lt;/em&gt;  &lt;/p&gt;
 &lt;h2 id=&quot;工具准备&quot;&gt;&lt;a href=&quot;#工具准备&quot; class=&quot;headerlink&quot; title=&quot;工具准备&quot;&gt;&lt;/a&gt;工具准备&lt;/h2&gt;&lt;ol&gt;
@@ -33,7 +33,6 @@
 &lt;li&gt;安装完成后，验证安装成功，打开命令行窗口，输入命令后，显示版本号；&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ node -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ hexo &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ hexo &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ hexo &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h2 id=&quot;申请Github&quot;&gt;&lt;a href=&quot;#申请Github&quot; class=&quot;headerlink&quot; title=&quot;申请Github&quot;&gt;&lt;/a&gt;申请Github&lt;/h2&gt;&lt;h2 id=&quot;安装Hexo&quot;&gt;&lt;a href=&quot;#安装Hexo&quot; class=&quot;headerlink&quot; title=&quot;安装Hexo&quot;&gt;&lt;/a&gt;安装Hexo&lt;/h2&gt;&lt;h2 id=&quot;配置博客&quot;&gt;&lt;a href=&quot;#配置博客&quot; class=&quot;headerlink&quot; title=&quot;配置博客&quot;&gt;&lt;/a&gt;配置博客&lt;/h2&gt;</content>
     
     <summary type="html">
