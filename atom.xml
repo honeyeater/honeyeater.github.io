@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://honeyeater.github.io/"/>
-  <updated>2016-03-03T15:13:14.950Z</updated>
+  <updated>2016-03-04T15:54:04.283Z</updated>
   <id>http://honeyeater.github.io/</id>
   
   <author>
@@ -16,13 +16,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>基于Hexo搭建Github博客</title>
+    <title>基于Hexo搭建GitHub博客</title>
     <link href="http://honeyeater.github.io/2016/03/03/%E5%9F%BA%E4%BA%8EHexo%E6%90%AD%E5%BB%BAGithub%E5%8D%9A%E5%AE%A2/"/>
     <id>http://honeyeater.github.io/2016/03/03/基于Hexo搭建Github博客/</id>
     <published>2016-03-03T13:09:14.000Z</published>
-    <updated>2016-03-03T15:13:14.950Z</updated>
+    <updated>2016-03-04T15:54:04.283Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;em&gt;本文基于Window7环境搭建Github博客&lt;/em&gt;  &lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;em&gt;本文基于Window7环境搭建GitHub博客&lt;/em&gt;  &lt;/p&gt;
 &lt;h2 id=&quot;工具准备&quot;&gt;&lt;a href=&quot;#工具准备&quot; class=&quot;headerlink&quot; title=&quot;工具准备&quot;&gt;&lt;/a&gt;工具准备&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;Windows版Git安装工具，下载地址&lt;a href=&quot;http://git-for-windows.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://git-for-windows.github.io/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Nodejs，下载地址&lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://nodejs.org/en/&lt;/a&gt;&lt;/li&gt;
@@ -33,11 +33,65 @@
 &lt;li&gt;安装完成后，验证安装成功，打开命令行窗口，输入命令后，显示版本号；&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ node -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;申请Github&quot;&gt;&lt;a href=&quot;#申请Github&quot; class=&quot;headerlink&quot; title=&quot;申请Github&quot;&gt;&lt;/a&gt;申请Github&lt;/h2&gt;&lt;h2 id=&quot;安装Hexo&quot;&gt;&lt;a href=&quot;#安装Hexo&quot; class=&quot;headerlink&quot; title=&quot;安装Hexo&quot;&gt;&lt;/a&gt;安装Hexo&lt;/h2&gt;&lt;h2 id=&quot;配置博客&quot;&gt;&lt;a href=&quot;#配置博客&quot; class=&quot;headerlink&quot; title=&quot;配置博客&quot;&gt;&lt;/a&gt;配置博客&lt;/h2&gt;</content>
+&lt;h2 id=&quot;申请GitHub&quot;&gt;&lt;a href=&quot;#申请GitHub&quot; class=&quot;headerlink&quot; title=&quot;申请GitHub&quot;&gt;&lt;/a&gt;申请GitHub&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;进入&lt;a href=&quot;https://github.com/explore&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;注册账号；&lt;/li&gt;
+&lt;li&gt;注册成功后，新建repository；&lt;/li&gt;
+&lt;li&gt;输入Repository name:yourname.github.io(yourname与你的注册用户名一致，这就是博客地址）；&lt;/li&gt;
+&lt;li&gt;Repository建立完成，进入Setting–&amp;gt;Options，GitHub Pages模块，点击“Launch automatic page generator”，启动GitHub Page；&lt;/li&gt;
+&lt;li&gt;点击“Continue to layouts”，最后点击“Publish page”,发布github默认生成的一个静态站点。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;安装Hexo&quot;&gt;&lt;a href=&quot;#安装Hexo&quot; class=&quot;headerlink&quot; title=&quot;安装Hexo&quot;&gt;&lt;/a&gt;安装Hexo&lt;/h2&gt;&lt;p&gt;&lt;em&gt;Hexo是基于nodejs的静态博客&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在电脑上建立blog文件夹，用于存放博客文件；&lt;/li&gt;
+&lt;li&gt;在blog文件夹中，右键点击”Git Bash here”，进入Git命令行窗口；&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;执行如下命令，安装Hexo&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo init&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Hexo会自动在目标文件夹建立网站所需的文件。然后根据提示，运行命令&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ nmp install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;会在文件夹中安装node_modules；  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;开启服务&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[info] Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;表示Hexo Server启动成功，在浏览器中运行&lt;a href=&quot;http://localhost:4000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:4000&lt;/a&gt;，可以看到Hexo的页面，按Ctro+C可以关闭服务；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;新建一篇博客，执行如下命令&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo init &lt;span class=&quot;string&quot;&gt;&quot;My First Blog&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;重新启动服务，可以看到新增了一篇博客；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;编辑博客，进入blog下source\_post文件夹下看到markdown文件：My First Blog.md，使用支持MarkDown语法的编辑器来编辑此文件；&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;生成HTML静态网页，运行如下命令&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;可以在blog的public文件夹中看到html、css等文件；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;修改Hexo配置文件&lt;br&gt;部署到GitHub上前，需要先配置blog下面的_config.yml文件，在最下面找到下面内容&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Deployment&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## Docs: http://hexo.io/docs/deployment.html&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;修改为&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;: git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  repository: git@github.com:honeyeater/honeyeater.github.io.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  branch: master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;发布到GitHub&lt;br&gt;在Git命令行中，运行如下命令发布到GitHub&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;测试&lt;br&gt;运行&lt;a href=&quot;http://honeyeater.github.io.git，正常显示网页，表明成功&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://honeyeater.github.io.git，正常显示网页，表明成功&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;部署总结&quot;&gt;&lt;a href=&quot;#部署总结&quot; class=&quot;headerlink&quot; title=&quot;部署总结&quot;&gt;&lt;/a&gt;部署总结&lt;/h2&gt;&lt;p&gt;每次部署，依次三个命令&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo clean&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo generate&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;本地调试，运行命令&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo g &lt;span class=&quot;comment&quot;&gt;#生成&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ hexo s &lt;span class=&quot;comment&quot;&gt;#启动本地服务，进行预览&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;也可以简化为一条命令&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo s -g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;Hexo命令&quot;&gt;&lt;a href=&quot;#Hexo命令&quot; class=&quot;headerlink&quot; title=&quot;Hexo命令&quot;&gt;&lt;/a&gt;Hexo命令&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;常用命令&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo new &lt;span class=&quot;string&quot;&gt;&quot;postName&quot;&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;#新建文章&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo new page &lt;span class=&quot;string&quot;&gt;&quot;pageName&quot;&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;#新建页面&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo generate &lt;span class=&quot;comment&quot;&gt;#生成静态页面至public目录&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo server &lt;span class=&quot;comment&quot;&gt;#开启预览访问端口（默认端口4000，&#39;ctrl + c&#39;关闭server）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo deploy &lt;span class=&quot;comment&quot;&gt;#将.deploy目录部署到GitHub&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo &lt;span class=&quot;built_in&quot;&gt;help&lt;/span&gt;  &lt;span class=&quot;comment&quot;&gt;#查看帮助&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo version  &lt;span class=&quot;comment&quot;&gt;#查看Hexo的版本&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;复合命令&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo deploy -g  &lt;span class=&quot;comment&quot;&gt;#生成加部署&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo server -g  &lt;span class=&quot;comment&quot;&gt;#生成加预览&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;简写为&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo n == hexo new&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo g == hexo generate&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo s == hexo server&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo d == hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;配置Theme&quot;&gt;&lt;a href=&quot;#配置Theme&quot; class=&quot;headerlink&quot; title=&quot;配置Theme&quot;&gt;&lt;/a&gt;配置Theme&lt;/h2&gt;&lt;h2 id=&quot;搭建常见问题&quot;&gt;&lt;a href=&quot;#搭建常见问题&quot; class=&quot;headerlink&quot; title=&quot;搭建常见问题&quot;&gt;&lt;/a&gt;搭建常见问题&lt;/h2&gt;</content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;em&gt;本文基于Window7环境搭建Github博客&lt;/em&gt;  &lt;/p&gt;
+      &lt;p&gt;&lt;em&gt;本文基于Window7环境搭建GitHub博客&lt;/em&gt;  &lt;/p&gt;
 &lt;h2 id=&quot;工具准备&quot;&gt;&lt;a href=&quot;#工具准备&quot; class=&quot;headerlink&quot; title=&quot;工具准备&quot;&gt;&lt;/a&gt;工具准备&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;Windows版Git安装工
     

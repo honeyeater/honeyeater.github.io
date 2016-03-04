@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>基于Hexo搭建Github博客 | 一步</title>
+    <title>基于Hexo搭建GitHub博客 | 一步</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="honeyeater">
     
-    <meta name="description" content="本文基于Window7环境搭建Github博客  
+    <meta name="description" content="本文基于Window7环境搭建GitHub博客  
 工具准备
 Windows版Git安装工具，下载地址http://git-for-windows.github.io/
 Nodejs，下载地址https://nodejs.org/en/
@@ -75,7 +75,7 @@ Nodejs，下载地址https://nodejs.org/en/
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/03/03/基于Hexo搭建Github博客/" title="基于Hexo搭建Github博客" itemprop="url">基于Hexo搭建Github博客</a>
+      <a href="/2016/03/03/基于Hexo搭建Github博客/" title="基于Hexo搭建GitHub博客" itemprop="url">基于Hexo搭建GitHub博客</a>
   </h1>
   <p class="article-author">By
     
@@ -83,7 +83,7 @@ Nodejs，下载地址https://nodejs.org/en/
     </p>
   <p class="article-time">
     <time datetime="2016-03-03T13:09:14.000Z" itemprop="datePublished">2016-03-03</time>
-    更新日期:<time datetime="2016-03-03T15:13:14.950Z" itemprop="dateModified">2016-03-03</time>
+    更新日期:<time datetime="2016-03-04T15:54:04.283Z" itemprop="dateModified">2016-03-04</time>
     
   </p>
 </header>
@@ -92,10 +92,10 @@ Nodejs，下载地址https://nodejs.org/en/
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#工具准备"><span class="toc-number">1.</span> <span class="toc-text">工具准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Git"><span class="toc-number">2.</span> <span class="toc-text">安装Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Node-js"><span class="toc-number">3.</span> <span class="toc-text">安装Node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#申请Github"><span class="toc-number">4.</span> <span class="toc-text">申请Github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Hexo"><span class="toc-number">5.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置博客"><span class="toc-number">6.</span> <span class="toc-text">配置博客</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#工具准备"><span class="toc-number">1.</span> <span class="toc-text">工具准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Git"><span class="toc-number">2.</span> <span class="toc-text">安装Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Node-js"><span class="toc-number">3.</span> <span class="toc-text">安装Node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#申请GitHub"><span class="toc-number">4.</span> <span class="toc-text">申请GitHub</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Hexo"><span class="toc-number">5.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署总结"><span class="toc-number">6.</span> <span class="toc-text">部署总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo命令"><span class="toc-number">7.</span> <span class="toc-text">Hexo命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Theme"><span class="toc-number">8.</span> <span class="toc-text">配置Theme</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建常见问题"><span class="toc-number">9.</span> <span class="toc-text">搭建常见问题</span></a></li></ol>
 		</div>
 		
-		<p><em>本文基于Window7环境搭建Github博客</em>  </p>
+		<p><em>本文基于Window7环境搭建GitHub博客</em>  </p>
 <h2 id="工具准备"><a href="#工具准备" class="headerlink" title="工具准备"></a>工具准备</h2><ol>
 <li>Windows版Git安装工具，下载地址<a href="http://git-for-windows.github.io/" target="_blank" rel="external">http://git-for-windows.github.io/</a></li>
 <li>Nodejs，下载地址<a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a></li>
@@ -106,7 +106,61 @@ Nodejs，下载地址https://nodejs.org/en/
 <li>安装完成后，验证安装成功，打开命令行窗口，输入命令后，显示版本号；</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br></pre></td></tr></table></figure>
-<h2 id="申请Github"><a href="#申请Github" class="headerlink" title="申请Github"></a>申请Github</h2><h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><h2 id="配置博客"><a href="#配置博客" class="headerlink" title="配置博客"></a>配置博客</h2>  
+<h2 id="申请GitHub"><a href="#申请GitHub" class="headerlink" title="申请GitHub"></a>申请GitHub</h2><ol>
+<li>进入<a href="https://github.com/explore" target="_blank" rel="external">GitHub</a>注册账号；</li>
+<li>注册成功后，新建repository；</li>
+<li>输入Repository name:yourname.github.io(yourname与你的注册用户名一致，这就是博客地址）；</li>
+<li>Repository建立完成，进入Setting–&gt;Options，GitHub Pages模块，点击“Launch automatic page generator”，启动GitHub Page；</li>
+<li>点击“Continue to layouts”，最后点击“Publish page”,发布github默认生成的一个静态站点。</li>
+</ol>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p><em>Hexo是基于nodejs的静态博客</em></p>
+<ol>
+<li>在电脑上建立blog文件夹，用于存放博客文件；</li>
+<li>在blog文件夹中，右键点击”Git Bash here”，进入Git命令行窗口；</li>
+<li><p>执行如下命令，安装Hexo</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Hexo会自动在目标文件夹建立网站所需的文件。然后根据提示，运行命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nmp install</span><br></pre></td></tr></table></figure>
+<p>会在文件夹中安装node_modules；  </p>
+</li>
+<li><p>开启服务</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">[info] Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+<p>表示Hexo Server启动成功，在浏览器中运行<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>，可以看到Hexo的页面，按Ctro+C可以关闭服务；</p>
+</li>
+<li><p>新建一篇博客，执行如下命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init <span class="string">"My First Blog"</span></span><br></pre></td></tr></table></figure>
+<p>重新启动服务，可以看到新增了一篇博客；</p>
+</li>
+<li>编辑博客，进入blog下source\_post文件夹下看到markdown文件：My First Blog.md，使用支持MarkDown语法的编辑器来编辑此文件；</li>
+<li><p>生成HTML静态网页，运行如下命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>可以在blog的public文件夹中看到html、css等文件；</p>
+</li>
+<li><p>修改Hexo配置文件<br>部署到GitHub上前，需要先配置blog下面的_config.yml文件，在最下面找到下面内容</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: http://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>:</span><br></pre></td></tr></table></figure>
+<p>修改为</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: git@github.com:honeyeater/honeyeater.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>发布到GitHub<br>在Git命令行中，运行如下命令发布到GitHub</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>测试<br>运行<a href="http://honeyeater.github.io.git，正常显示网页，表明成功" target="_blank" rel="external">http://honeyeater.github.io.git，正常显示网页，表明成功</a></p>
+</li>
+</ol>
+<h2 id="部署总结"><a href="#部署总结" class="headerlink" title="部署总结"></a>部署总结</h2><p>每次部署，依次三个命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<p>本地调试，运行命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g <span class="comment">#生成</span></span><br><span class="line">$ hexo s <span class="comment">#启动本地服务，进行预览</span></span><br></pre></td></tr></table></figure>
+<p>也可以简化为一条命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s -g</span><br></pre></td></tr></table></figure>
+<h2 id="Hexo命令"><a href="#Hexo命令" class="headerlink" title="Hexo命令"></a>Hexo命令</h2><p><strong>常用命令</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">"postName"</span> <span class="comment">#新建文章</span></span><br><span class="line">hexo new page <span class="string">"pageName"</span> <span class="comment">#新建页面</span></span><br><span class="line">hexo generate <span class="comment">#生成静态页面至public目录</span></span><br><span class="line">hexo server <span class="comment">#开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</span></span><br><span class="line">hexo deploy <span class="comment">#将.deploy目录部署到GitHub</span></span><br><span class="line">hexo <span class="built_in">help</span>  <span class="comment">#查看帮助</span></span><br><span class="line">hexo version  <span class="comment">#查看Hexo的版本</span></span><br></pre></td></tr></table></figure>
+<p><strong>复合命令</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy -g  <span class="comment">#生成加部署</span></span><br><span class="line">hexo server -g  <span class="comment">#生成加预览</span></span><br></pre></td></tr></table></figure>
+<p>简写为</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo n == hexo new</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure>
+<h2 id="配置Theme"><a href="#配置Theme" class="headerlink" title="配置Theme"></a>配置Theme</h2><h2 id="搭建常见问题"><a href="#搭建常见问题" class="headerlink" title="搭建常见问题"></a>搭建常见问题</h2>  
 	</div>
 		<footer class="article-footer clearfix">
 
@@ -125,7 +179,7 @@ Nodejs，下载地址https://nodejs.org/en/
 
 <div class="article-share" id="share">
 
-  <div data-url="http://honeyeater.github.io/2016/03/03/基于Hexo搭建Github博客/" data-title="基于Hexo搭建Github博客 | 一步" data-tsina="null" class="share clearfix">
+  <div data-url="http://honeyeater.github.io/2016/03/03/基于Hexo搭建Github博客/" data-title="基于Hexo搭建GitHub博客 | 一步" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -155,7 +209,7 @@ Nodejs，下载地址https://nodejs.org/en/
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#工具准备"><span class="toc-number">1.</span> <span class="toc-text">工具准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Git"><span class="toc-number">2.</span> <span class="toc-text">安装Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Node-js"><span class="toc-number">3.</span> <span class="toc-text">安装Node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#申请Github"><span class="toc-number">4.</span> <span class="toc-text">申请Github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Hexo"><span class="toc-number">5.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置博客"><span class="toc-number">6.</span> <span class="toc-text">配置博客</span></a></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#工具准备"><span class="toc-number">1.</span> <span class="toc-text">工具准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Git"><span class="toc-number">2.</span> <span class="toc-text">安装Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Node-js"><span class="toc-number">3.</span> <span class="toc-text">安装Node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#申请GitHub"><span class="toc-number">4.</span> <span class="toc-text">申请GitHub</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Hexo"><span class="toc-number">5.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署总结"><span class="toc-number">6.</span> <span class="toc-text">部署总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo命令"><span class="toc-number">7.</span> <span class="toc-text">Hexo命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Theme"><span class="toc-number">8.</span> <span class="toc-text">配置Theme</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建常见问题"><span class="toc-number">9.</span> <span class="toc-text">搭建常见问题</span></a></li></ol>
   </div>
 
 <div id="asidepart">
