@@ -77,7 +77,7 @@
     </p>
   <p class="article-time">
     <time datetime="2016-03-03T13:09:14.000Z" itemprop="datePublished">2016-03-03</time>
-    更新日期:<time datetime="2016-03-05T08:21:47.246Z" itemprop="dateModified">2016-03-05</time>
+    更新日期:<time datetime="2016-03-05T08:25:43.305Z" itemprop="dateModified">2016-03-05</time>
     
   </p>
 </header>
@@ -106,10 +106,8 @@
 </ol>
 <p>然后一直回车即可，看到提示.ssh文件夹下生成id_rsa与id_rsa.pub，其中id_rsa为私钥，id_rsa.pub为公钥</p>
 <ol>
-<li><p>设置GitHub SSH Keys<br>登录GitHub，Settings–&gt;SSH Keys–&gt;New SSH Key，Title随便输入，将id_rsa.pub中的内容拷贝到Key下，点击“Add SSH key”</p>
-</li>
-<li><p>验证可以访问SSH</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -v git@github.com</span><br></pre></td></tr></table></figure>
+<li>设置GitHub SSH Keys<br>登录GitHub，Settings–&gt;SSH Keys–&gt;New SSH Key，Title随便输入，将id_rsa.pub中的内容拷贝到Key下，点击“Add SSH key”</li>
+<li>验证可以访问SSH<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -v git@github.com</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p>如果提示connection timeout 22端口，请检查防火墙是否关闭，关闭不能解决22端口，则可以再etc/ssh/ssh_config文件中增加下面内容，替换端口<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">Hostname ssh.github.com</span><br><span class="line">Port 443</span><br></pre></td></tr></table></figure></p>
@@ -195,12 +193,12 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>配置<br>blog目录下__config.yml_进行配置<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sitemap:</span><br><span class="line">  path: sitemap.xml</span><br></pre></td></tr></table></figure></p>
+<p>配置，blog目录下<em>config.yml</em>进行配置<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sitemap:</span><br><span class="line">  path: sitemap.xml</span><br></pre></td></tr></table></figure></p>
 <ol>
 <li>配置rss插件<br>安装<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>配置<br>blog目录下__config.yml_进行配置<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">feed:</span><br><span class="line">  <span class="built_in">type</span>: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  <span class="built_in">limit</span>: 20</span><br></pre></td></tr></table></figure></p>
+<p>配置<br>blog目录下<em>config.yml</em>进行配置<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">feed:</span><br><span class="line">  <span class="built_in">type</span>: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  <span class="built_in">limit</span>: 20</span><br></pre></td></tr></table></figure></p>
 <h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><ul>
 <li><p>Q: 摘要怎么在首页中就剩下140个字<br>A: 为了提高打开首页的速度故首页不加载文章图片，只加载文章摘要。强烈建议大家在写文章的时候自己总结description并将其放在开头的front-matter中。如果没有会截取内容前的140个字。</p>
 </li>
